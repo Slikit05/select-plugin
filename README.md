@@ -5,9 +5,10 @@
 Пример вызова селекта
 
     new Select('#select', {
-      placeholder: 'выберите категорию',
-      // selectedId: '1',
-      parentNode: window,
+      placeholder: 'выберите категорию', // плэйсхолдер селекта
+      // selectedId: '1', // активный item по дэфолту
+      parentNode: window, // при нажатии внеэлемента, селект закрывается
+      // генерация item для селекта 
       data: [{
           id: '1',
           value: 'Раз'
